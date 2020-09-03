@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="testAuto2(failed)">
+    <classes>
+      <class name="com.pageObjectModel2.loginpagetests.NegativeLoginTests">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="negativeTest"/>
+        </methods>
+      </class> <!-- com.pageObjectModel2.loginpagetests.NegativeLoginTests -->
+    </classes>
+  </test> <!-- testAuto2(failed) -->
+</suite> <!-- Failed suite [Default Suite] -->

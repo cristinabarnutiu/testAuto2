@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossDeviceSuite">
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaProjects/TestAutomationProject/src/main/java/devicesCompatibility/smoke/TestToggleView.java">
+        <classes>
+            <class name="com.devicesCompatibility.TestToggleView">
+                <methods>
+                    <include name="testToggleViewIphoneX"/>
+                    <include name="testToggleViewTablet"/>
+                    <include name="testToggleViewGalaxyS5"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

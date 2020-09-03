@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/IdeaProjects/TestAutomationProject/src/main/java/com">
+        <classes>
+            <class name="com.browserCompatibility.InvokeBrowserDynamically">
+                <parameter name="browser" value="chrome"></parameter>
+                <methods>
+                    <include name="verifyHomePageOnBrowsers"/>
+                </methods>
+            </class>
+            <class name="com.browserCompatibility.InvokeOtherBrowsers">
+                <methods>
+                    <include name="verifyHomePage"/>
+                </methods>
+            </class>
+            <class name="com.browserCompatibility.SampleSeleniumTest">
+                <methods>
+                    <include name="verifyHomePageWithChrome"/>
+                </methods>
+            </class>
+            <class name="com.findBrokenLinks.BrokenLinks">
+                <methods>
+                    <include name="checkIfLinkIsValid"/>
+                </methods>
+            </class>
+            <class name="com.findBrokenLinks.FindBrokenLink">
+                <methods>
+                    <include name="testFindBrokenLinks"/>
+                </methods>
+            </class>
+            <class name="com.scratch.CreateProject">
+                <methods>
+                    <include name="testCreateProject"/>
+                </methods>
+            </class>
+            <class name="com.scratch.HomePage">
+                <methods>
+                    <include name="testTitle"/>
+                    <include name="testCurrentUrl"/>
+                </methods>
+            </class>
+            <class name="com.scratch.JoinScratch">
+                <methods>
+                    <include name="testJoinScratchUserDetails"/>
+                    <include name="testJoinScratchCountry"/>
+                    <include name="testJoinScratchDateOfBirth"/>
+                    <include name="testJoinScratchGender"/>
+                    <include name="testJoinScratchEmail"/>
+                </methods>
+            </class>
+            <class name="com.scratch.SignIn">
+                <methods>
+                    <include name="testSignInWithValidCredentials"/>
+                    <include name="testSignInWithInvalidCredentials"/>
+                    <include name="testSingInNeedHelp"/>
+                </methods>
+            </class>
+            <class name="com.scratch.SignOut">
+                <methods>
+                    <include name="testSignOut"/>
+                </methods>
+            </class>
+            <class name="com.scratch.WatchVideo">
+                <methods>
+                    <include name="testWatchVideo"/>
+                </methods>
+            </class>
+            <class name="com.utils.ExtractSpecificElements">
+                <methods>
+                    <include name="getElements"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

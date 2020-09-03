@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Join Scratch Suite">
+    <test verbose="2" preserve-order="true" name="Join Scratch Test">
+        <classes>
+            <class name="com.scratch.JoinScratch">
+                <methods>
+                    <include name="testJoinScratchUserDetails"/>
+                    <include name="testJoinScratchCountry"/>
+                    <include name="testJoinScratchDateOfBirth"/>
+                    <include name="testJoinScratchGender"/>
+                    <include name="testJoinScratchEmail"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

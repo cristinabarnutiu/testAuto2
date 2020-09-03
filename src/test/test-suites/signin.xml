@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Sign In Suite">
+    <test verbose="2" preserve-order="true"
+          name="D:/IdeaProjects/testAuto2/src/main/java/com/pageObjectModel/testClases/SigninTest.java">
+        <classes>
+            <class name="com.pageObjectModel.testClases.SigninTest">
+                <methods>
+                    <include name="signinTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

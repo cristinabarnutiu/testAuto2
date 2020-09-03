@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Suite">
+    <suite-files>
+        <suite-file path="joinscratch.xml"></suite-file>
+        <suite-file path="signin.xml"></suite-file>
+    </suite-files>
+
+    <test verbose="2" preserve-order="true" name="AboutPage Test">
+    <classes>
+    <class name="com.pageObjectModel.testClases.AboutTest">
+        <parameter name="browser" value="chrome"></parameter>
+    </class>
+    </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Footer Test">
+    <classes>
+        <class name="com.pageObjectModel.testClases.FooterTest">
+            <parameter name="browser" value="chrome"></parameter>
+        </class>
+    </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Navbar Test">
+        <classes>
+            <class name="com.pageObjectModel.testClases.NavbarTest">
+                <parameter name="browser" value="chrome"></parameter>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Recommended Projects">
+        <classes>
+            <class name="com.scratch.ExtractDynamicElements">
+                <parameter name="browser" value="chrome"></parameter>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Create Project">
+        <classes>
+            <class name="com.scratch.CreateProject">
+                <parameter name="browser" value="chrome"></parameter>
+            </class>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="Watch Video">
+        <classes>
+            <class name="com.scratch.WatchVideo">
+                <parameter name="browser" value="chrome"></parameter>
+            </class>
+        </classes>
+    </test>
+
+</suite>
