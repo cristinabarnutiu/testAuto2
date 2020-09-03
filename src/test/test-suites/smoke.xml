@@ -53,4 +53,12 @@
         </classes>
     </test>
 
+    <test verbose="2" preserve-order="true" name="Sin Out">
+        <classes>
+            <class name="com.scratch.SignOut">
+                <parameter name="browser" value="chrome"></parameter>
+            </class>
+        </classes>
+    </test>
+
 </suite>
