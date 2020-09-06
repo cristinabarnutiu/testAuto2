@@ -1,4 +1,4 @@
-package com.pageObjectModel2.loginpagetests.base;
+package com.pageObjectModel2.base;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +11,7 @@ public class BrowserDriverFactory {
     private String browser;
     private Logger log;
 
+    //constructor receives a browser variable and assigns it to class-level browser variable
     public BrowserDriverFactory(String browser, Logger log) {
         this.browser = browser.toLowerCase();
         this.log = log;

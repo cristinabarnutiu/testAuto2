@@ -1,4 +1,4 @@
-package com.pageObjectModel2.loginpagetests.pages;
+package com.pageObjectModel2.pages;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;

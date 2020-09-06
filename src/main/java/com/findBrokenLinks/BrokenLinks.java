@@ -21,8 +21,8 @@ public class BrokenLinks {
     public void checkIfLinkIsValid(){
         String homePage = "https://scratch.mit.edu/";
         String url = "";
-        HttpURLConnection huc = null;
-        int respCode = 200;
+        HttpURLConnection httpURLConnection = null;
+        int responseCode = 200;
 
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -49,15 +49,15 @@ public class BrokenLinks {
             }
 
             try {
-                huc = (HttpURLConnection)(new URL(url).openConnection());
+                httpURLConnection = (HttpURLConnection)(new URL(url).openConnection());
 
-                huc.setRequestMethod("HEAD");
+                httpURLConnection.setRequestMethod("HEAD");
 
-                huc.connect();
+                httpURLConnection.connect();
 
-                respCode = huc.getResponseCode();
+                responseCode = httpURLConnection.getResponseCode();
 
-                if(respCode >= 400){
+                if(responseCode >= 400){
                     System.out.println(url+" is a broken link");
                 }
                 else{

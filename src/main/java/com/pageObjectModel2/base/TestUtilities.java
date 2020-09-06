@@ -1,4 +1,4 @@
-package com.pageObjectModel2.loginpagetests.base;
+package com.pageObjectModel2.base;
 
 public class TestUtilities extends BaseTest {
 

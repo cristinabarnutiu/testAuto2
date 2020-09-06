@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="testAuto2(failed)">
     <classes>
-      <class name="com.pageObjectModel2.loginpagetests.NegativeLoginTests">
+      <class name="com.scratch.CreateProject">
         <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="negativeTest"/>
+          <include name="beforeCreateProject"/>
+          <include name="testCreateProject"/>
+          <include name="afterCreateProject"/>
         </methods>
-      </class> <!-- com.pageObjectModel2.loginpagetests.NegativeLoginTests -->
+      </class> <!-- com.scratch.CreateProject -->
     </classes>
   </test> <!-- testAuto2(failed) -->
 </suite> <!-- Failed suite [Default Suite] -->

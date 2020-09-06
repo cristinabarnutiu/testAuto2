@@ -1,4 +1,4 @@
-package com.pageObjectModel2.loginpagetests.pages;
+package com.pageObjectModel2.pages;
 
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
@@ -37,11 +37,12 @@ public class BasePageObject {
 
     /** Type given text into element with given locator */
     protected void type(String text, By locator) {
-        waitForVisibilityOf(locator, 5);
+        waitForVisibilityOf(locator,5);
         find(locator).sendKeys(text);
     }
 
     /** Get URL of current page from browser */
+    //This method is public because it will be used in Tests
     public String getCurrentUrl() {
         return driver.getCurrentUrl();
     }
@@ -69,6 +70,14 @@ public class BasePageObject {
             } catch (StaleElementReferenceException e) {
             }
             attempts++;
+        }
+    }
+
+    protected void waitFor(long millis){
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 

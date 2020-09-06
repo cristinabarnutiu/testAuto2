@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 public class FindBrokenLink {
 
     @Test(enabled=true)
-    public void testFindBrokenLinks(){
+    public void testFindBrokenLinks() throws MalformedURLException{
         WebDriver driver = new ChromeDriver();
         driver.get("https://scratch.mit.edu/");
         driver.manage().window().maximize();
@@ -25,11 +25,11 @@ public class FindBrokenLink {
         System.out.println("Total number of links on the current page is "+links.size());
 
 
-            for (WebElement link : links) {
-                //System.out.println(link.getText());
-                String URL = link.getAttribute("href");
-                GetLinkStatus.verifyLink(URL);
-            }
+    for (WebElement link : links) {
+        //System.out.println(link.getText());
+        String URL = link.getAttribute("href");
+        GetLinkStatus.verifyLink(URL);
+    }
 
 
 
@@ -40,4 +40,7 @@ public class FindBrokenLink {
         driver.quit();
 
     }
+
+
+
 }
