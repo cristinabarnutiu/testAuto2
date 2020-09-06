@@ -1,25 +1,134 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-09-06T19:25:58Z" name="Default Suite" finished-at="2020-09-06T19:26:21Z" duration-ms="22763">
+  <suite started-at="2020-09-06T20:08:04Z" name="Positive and Negative Login Test Suite" finished-at="2020-09-06T20:08:54Z" duration-ms="49841">
     <groups>
     </groups>
-    <test started-at="2020-09-06T19:25:58Z" name="testAuto2" finished-at="2020-09-06T19:26:21Z" duration-ms="22763">
-      <class name="com.scratch.CreateProject">
-        <test-method is-config="true" signature="beforeCreateProject()[pri:0, instance:com.scratch.CreateProject@4ae9cfc1]" started-at="2020-09-06T19:25:58Z" name="beforeCreateProject" finished-at="2020-09-06T19:26:01Z" duration-ms="3006" status="PASS">
+    <test started-at="2020-09-06T20:08:04Z" name="ScratchPositiveLoginTest-chrome" finished-at="2020-09-06T20:08:20Z" duration-ms="16148">
+      <class name="com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest@1990a65e]" started-at="2020-09-06T20:08:04Z" name="setUp" finished-at="2020-09-06T20:08:10Z" duration-ms="6111" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@56ccd751]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeCreateProject -->
-        <test-method signature="testCreateProject()[pri:0, instance:com.scratch.CreateProject@4ae9cfc1]" started-at="2020-09-06T19:26:01Z" name="testCreateProject" finished-at="2020-09-06T19:26:21Z" duration-ms="19745" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="positiveLogInTest(java.lang.String, java.lang.String)[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest@1990a65e]" started-at="2020-09-06T20:08:10Z" name="positiveLogInTest" finished-at="2020-09-06T20:08:20Z" duration-ms="9382" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username_testauto]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password_testauto]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCreateProject -->
-        <test-method is-config="true" signature="afterCreateProject()[pri:0, instance:com.scratch.CreateProject@4ae9cfc1]" started-at="2020-09-06T19:26:21Z" name="afterCreateProject" finished-at="2020-09-06T19:26:21Z" duration-ms="0" status="PASS">
+        </test-method> <!-- positiveLogInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest@1990a65e]" started-at="2020-09-06T20:08:20Z" name="tearDown" finished-at="2020-09-06T20:08:20Z" duration-ms="636" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterCreateProject -->
-      </class> <!-- com.scratch.CreateProject -->
-    </test> <!-- testAuto2 -->
-  </suite> <!-- Default Suite -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest -->
+    </test> <!-- ScratchPositiveLoginTest-chrome -->
+    <test started-at="2020-09-06T20:08:20Z" name="ScratchPositiveLoginTest-firefox" finished-at="2020-09-06T20:08:39Z" duration-ms="18397">
+      <class name="com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest@fcd6521]" started-at="2020-09-06T20:08:20Z" name="setUp" finished-at="2020-09-06T20:08:25Z" duration-ms="4543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@458544e0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="positiveLogInTest(java.lang.String, java.lang.String)[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest@fcd6521]" started-at="2020-09-06T20:08:25Z" name="positiveLogInTest" finished-at="2020-09-06T20:08:38Z" duration-ms="13012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username_testauto]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password_testauto]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- positiveLogInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest@fcd6521]" started-at="2020-09-06T20:08:38Z" name="tearDown" finished-at="2020-09-06T20:08:39Z" duration-ms="842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchPositiveLoginTest -->
+    </test> <!-- ScratchPositiveLoginTest-firefox -->
+    <test started-at="2020-09-06T20:08:39Z" name="ScratchNegativeLoginTest-chrome" finished-at="2020-09-06T20:08:54Z" duration-ms="15284">
+      <class name="com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchNegativeLoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String, org.testng.ITestContext)[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchNegativeLoginTest@2fd66ad3]" started-at="2020-09-06T20:08:39Z" name="setUp" finished-at="2020-09-06T20:08:44Z" duration-ms="5313" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[org.testng.TestRunner@6bcbf05b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="negativeLogInTest(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchNegativeLoginTest@2fd66ad3]" started-at="2020-09-06T20:08:44Z" name="negativeLogInTest" finished-at="2020-09-06T20:08:53Z" duration-ms="9343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[username_invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password_invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Incorrect username or password.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- negativeLogInTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchNegativeLoginTest@2fd66ad3]" started-at="2020-09-06T20:08:53Z" name="tearDown" finished-at="2020-09-06T20:08:54Z" duration-ms="627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.pageObjectModel2.com.pageObjectModel2.logintests.ScratchNegativeLoginTest -->
+    </test> <!-- ScratchNegativeLoginTest-chrome -->
+  </suite> <!-- Positive and Negative Login Test Suite -->
 </testng-results>

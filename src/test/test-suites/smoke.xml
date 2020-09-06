@@ -3,7 +3,7 @@
 <suite name="Smoke Suite">
     <suite-files>
         <suite-file path="joinscratch.xml"></suite-file>
-        <suite-file path="signin.xml"></suite-file>
+        <suite-file path="pageObjectModel-signin.xml"></suite-file>
     </suite-files>
 
     <test verbose="2" preserve-order="true" name="AboutPage Test">

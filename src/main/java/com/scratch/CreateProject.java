@@ -51,20 +51,22 @@ public class CreateProject {
 
         Actions act = new Actions(driver);
 
-        WebElement block=driver.findElement(By.cssSelector("#react-tabs-1 > div.gui_blocks-wrapper_1ccgf.box_box_2jjDp > div > div > svg.blocklyFlyout > g"));
+        //WebElement block=driver.findElement(By.cssSelector("#react-tabs-1 > div.gui_blocks-wrapper_1ccgf.box_box_2jjDp > div > div > svg.blocklyFlyout > g"));
 
         //WebElement to=driver.findElement(By.xpath("//*[@id='bank']/li"));
 
         //Actions act = new Actions(driver);
-        act.dragAndDropBy(moveXStepsBlock,700,0).perform();
+        act.dragAndDropBy(moveXStepsBlock,700,20).perform();
 
         Thread.sleep(4000);
         eventsCategory.click();
+        eventsCategory.click();
+        Thread.sleep(4000);
 
-        WebElement whenFlagClicked = driver.findElement(By.cssSelector("g[data-id=\"event_whenflagclicked\"]"));
+        WebElement whenFlagClicked = driver.findElement(By.cssSelector("#react-tabs-1 > div.gui_blocks-wrapper_1ccgf.box_box_2jjDp > div > div > svg.blocklyFlyout > g > g.blocklyBlockCanvas > g:nth-child(25) > path"));
         //Actions act2 = new Actions(driver);
         whenFlagClicked.getLocation();
-        act.dragAndDropBy(whenFlagClicked,300,5).perform();
+        act.dragAndDropBy(whenFlagClicked,700,-20).perform();
         Thread.sleep(4000);
 
         WebElement goFlag = driver.findElement(By.cssSelector("#app > div > div.gui_body-wrapper_-N0sA.box_box_2jjDp > div > div.gui_stage-and-target-wrapper_69KBf.box_box_2jjDp > div.stage-wrapper_stage-wrapper_2bejr.box_box_2jjDp > div:nth-child(1) > div > div > div.controls_controls-container_2xinB > img.green-flag_green-flag_1kiAo"));
@@ -72,7 +74,7 @@ public class CreateProject {
 
         Thread.sleep(5000);
 
-        System.out.println(block.isDisplayed()+""+block.getLocation());
+        //System.out.println(block.isDisplayed()+""+block.getLocation());
 
 
     }

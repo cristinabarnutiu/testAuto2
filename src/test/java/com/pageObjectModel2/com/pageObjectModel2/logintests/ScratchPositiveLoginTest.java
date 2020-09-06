@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class ScratchPositiveLoginTest extends TestUtilities {
 
     @Parameters({ "username", "password"})
-    @Test(enabled=false)
+    @Test(enabled=true)
     public void positiveLogInTest(String username, String password) {
         log.info("Starting positive logIn test");
         ScratchHomePage scratchHomePage = new ScratchHomePage(driver,log);
